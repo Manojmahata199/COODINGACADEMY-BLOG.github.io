@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main-div{
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-div{
+    max-width: 700px;
+    height: auto;
+    background-color: black;
+    padding: 50px;
+    box-shadow: 4px 4px 20px 10px white;
+    border-radius: 25px;
+    color: white;
+}
+.center-div h3{
+    margin-bottom: 25px;
+    margin-top: -25px;
+    text-decoration: underline;
+    font-size: 32px;
+    color: blue;
+	align-items: center;
+	justify-content: center;
+	padding-left: 120px;
+	
+    
+}
+#nameerror{
+	color: red;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#emailerror{
+	color: red;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.small-div label{
+    font-size: 22px;
+    margin-top: 10px;
+}
+.small-div input{
+    font-size: 25px;
+    margin-bottom: 40px;
+    width: 300px;
+	
+
+}
+.small-div{
+	font-size: 22px;
+}
+#sub-btn{
+	font-size: 25px;
+    margin-bottom: 10px;
+    width: 412px;
+	background-color: green;
+	color: black;
+
+}
+nav{
+	width: 100%;
+	height: 10vh;
+	background:black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav .logo{
+	width: 25%;
+	text-align: center;
+}
+nav .menu{
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+nav .menu a {
+	width: 20%;
+	text-decoration: none;
+	font-size: 25px;
+}
+nav .menu a:hover{
+	font-size: 30px;
+	color: white;
+}
+nav .logo:hover{
+	color: yellow;
+	font-size:20px ;
+}

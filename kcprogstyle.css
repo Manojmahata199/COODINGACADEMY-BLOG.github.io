@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+.title{
+	background-color: black;
+	color: white;
+	justify-content: center;
+}
+.title h3{
+	text-align: center;
+	height: 90px;
+	margin-top: 0px;
+	font-size: 40px;
+
+}
+.menuc{
+	display: flex;
+	background-color: yellow;
+	color: black;
+	justify-content: center;
+	height: 750px;
+}
+.menuitem{
+	justify-content: center;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+.menuitem ol li{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+.menuitem h3{
+	font-size: 25px;
+	text-decoration: underline;
+}
+.cintro h1{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+.cintro p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-size: 20px;
+}
+.cintro h3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.list{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 20px;
+
+}
+.code{
+	background-color: black;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 60px;
+}
+.output{
+	background-color: black;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 60px;
+
+}
+.linelast{
+	height: 5px;
+	background-color: black;
+}
+#btnback{
+	size: 100px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	background-color: yellow;
+	font-size: 30px;
+}
+.btnc a{
+	size: 100px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	background-color: yellow;
+	font-size: 30px;
+	margin-right: 60px;
+
+}
+.alllist table{
+	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	justify-content: space-around;
+	font-size: 40px;
+
+}
+.alllist table tr td{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.table{
+	width: 80%;
+    max-width: 80%;
+    margin-bottom: 20px;
+    border: 4px solid #ddd;
+    display: table;
+    text-align: center;
+    box-sizing: border-box;
+    border-color:black;
+    
+    margin-right: 50px;
+    border-collapse: collapse;
+    text-indent: initial;
+    text-decoration: none;
+}
+
+

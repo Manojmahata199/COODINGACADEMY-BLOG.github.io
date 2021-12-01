@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>codingacademy.com</title>
+	<link rel="stylesheet" type="text/css" href="jmywebstyle.css">
+	<script src="jmyweb.js"></script>
+	<script src="https://kit.fontawesome.com/a53c52c612.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo" ><button class="open-btn" onclick="menuopen()"><i class="fa fa-bars"></i></button><h1>CODING ACADEMY</h1>
+				
+			</div>
+			<div class="menu">
+
+				<li><a href="#homesection">home</a></li>
+				<li>
+					<div class="drop-btn">
+					    <a href="#course">Courses</a>
+					    <button class="btn-menuopen" onclick="dropmenuopen()"><i class="fa fa-caret-down"></i></button>
+					</div>
+					<ul class="drop-list" id="droplist">
+						<li><a href="kcprogramming.html">C programming</a></li>
+						<li><a href="ljavaprogram.html">Java programming</a></li>
+						<li><a href="python.html">Python programming</a></li>
+						<li><a href="zcpp.html">CPP programming</a></li>
+						<li><button onclick="dropmenuclose()"><i class="fa fa-caret-up"></i></button></li>
+					</ul>
+				</li>
+				<li><a href="#service">Service</a></li>
+				<li><a href="#About">About</a></li>
+				<li><a href="#contact">contact</a></li>
+			</div>
+		</nav>
+		<div class="home">
+				<div class="main-logo">
+				  <div id="menu-bar">
+					<ul class="ul-1">
+						<button class="btn-close" onclick="menuclose()"><i class="fa fa-close"></i></button>
+						<li><a href="#homesection">home</a></li>
+				        <li><a href="#course">Courses</a></li>
+			        	<li><a href="#service">Service</a></li>
+				        <li><a href="#About">About</a></li>
+				        <li><a href="#contact">contact</a></li>
+						
+					</ul>
+					
+				  </div>
+
+				  <section id="homesection" class="homesection">
+					<h3 class="h1"><b>WELCOME TO CODING ACADEMY</b></h3>
+					<h1 class="h2"><b>Thank you for visit</b> </h1>
+					<p><b>LEARN CODING TO BECOME A MASTER IN CODING</b> </p>
+					<div class="class-homebtn">
+					    <a href="https://youtu.be/WnBiMm6oGbw" class="btnone"><b>watch video</b></a>
+					    <a href="https://www.youtube.com/channel/UCk1S08u8P9_g-pPCWGuN67w" class="btnone"><b>subscribe</b></a>
+				    </div>
+				  </section>
+			    </div>
+				<div class="subject-section">
+					<div class="search-bar">
+						<input type="text" placeholder="Search Different Courses">
+						<button type="submit" name="submit">Search</button>
+					</div>
+					<div class="subject-alllist">
+						<ul>
+							
+							<li class="subject-list" ><button onclick="language()">Language</button></li>
+							<li class="subject-list" ><button onclick="datastruc()">Data structure</button></li>
+							<li class="subject-list" ><button onclick="algorithm()">Algorithm</button></li>
+							<li class="subject-list" ><button onclick="database()">Database</button></li>
+							<li class="subject-list" ><button onclick="frontend()">Front-End</button></li>
+							<li class="subject-list" ><button onclick="backend()">Back-End</button></li>
+							
+
+							
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+	</header>
+
+
+	
+
+
+
+
+
+	<!------- for course section------>
+
+	<section class="coursesection" id="course">
+		
+		<div class="coursediv">
+		    <h2 class="h2co">Courses</h2>
+	    </div>
+		<div class="course-flex">
+          
+	      <div class="coursediv2" id="language1">
+	    	<div class="img">
+			    <img src="picture/c.jpg">
+			
+		    </div>
+		        <h3 class="h3c"> C Programming Language</h3>
+		    <div class="coursediv3">
+		    	<h3 class="h3lc">Learn more</h3>
+		        <a href="kcprogramming.html" class="btnone">here</a>
+		    </div>
+		    
+		    
+		  </div>
+		
+			<div class="coursediv2" id="language2">
+			  <div class="img">
+				  <img src="picture/python.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="kcprogramming.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+		
+			<div class="coursediv2" id="language3">
+			  <div class="img">
+				  <img src="picture/cpp.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="zcpp.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+		
+			<div class="coursediv2" id="language4">
+			  <div class="img">
+				  <img src="picture/cpp.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="zcpp.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+		    
+		    
+			<div class="coursediv2" id="datastruc1">
+			  <div class="img">
+				  <img src="picture/java.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="ljavaprogram.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+		
+			<div class="coursediv2" id="datastruc2">
+			  <div class="img">
+				  <img src="picture/python.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="python.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+		
+			<div class="coursediv2" id="algorithm1">
+			  <div class="img">
+				  <img src="picture/c.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="kcprogramming.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+			<div class="coursediv2" id="algorithm2">
+			  <div class="img">
+				  <img src="picture/java.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="ljavaprogram.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+		    
+			<div class="coursediv2" id="database1">
+			  <div class="img">
+				  <img src="picture/c.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="kcprogramming.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+		
+			<div class="coursediv2" id="database2">
+			  <div class="img">
+				  <img src="picture/python.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="python.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+		   
+		   
+			<div class="coursediv2" id="frontend1">
+			  <div class="img">
+				  <img src="picture/java.jpg">
+			  
+			  </div>
+				  <h3 class="h3c"> C Programming Language</h3>
+			  <div class="coursediv3">
+				  <h3 class="h3lc">Learn more</h3>
+				  <a href="ljavaprogram.html" class="btnone">here</a>
+			  </div>
+			  
+			  
+			</div>
+			<div class="coursediv2" id="frontend2">
+				<div class="img">
+					<img src="picture/java.jpg">
+				
+				</div>
+					<h3 class="h3c"> C Programming Language</h3>
+				<div class="coursediv3">
+					<h3 class="h3lc">Learn more</h3>
+					<a href="ljavaprogram.html" class="btnone">here</a>
+				</div>
+				
+				
+			</div>
+		    
+			
+			<div class="coursediv2" id="backend1">
+				<div class="img">
+					<img src="picture/java.jpg">
+				
+				</div>
+					<h3 class="h3c"> C Programming Language</h3>
+				<div class="coursediv3">
+					<h3 class="h3lc">Learn more</h3>
+					<a href="ljavaprogram.html" class="btnone">here</a>
+				</div>
+				
+				
+			  </div>
+			 
+			  <div class="coursediv2" id="backend2">
+				<div class="img">
+					<img src="picture/java.jpg">
+				
+				</div>
+					<h3 class="h3c"> C Programming Language</h3>
+				<div class="coursediv3">
+					<h3 class="h3lc">Learn more</h3>
+					<a href="ljavaprogram.html" class="btnone">here</a>
+				</div>
+				
+				
+			  </div>
+			  
+		
+		 
+		  </div>
+		
+	</section>
+
+
+
+
+
+	<!---------for background section--->
+
+
+	<section class="bottombackground">
+		<h3><b>CODING ACADEMY</b></h3>
+		<h1>WANT NEW COURSE -PLEASE COMMENT BELOW</h1>
+		<p>for more courses like Web Developoment, Android Studio,Data 
+			Analysis,SQL Database please cpmment below ,i will try to 
+		add more courses like these ,our website allways think about 
+		readers  wants and demands please follow us and stay contact
+		with us thank you for visiting our website </p>
+		<div class="commentbar">
+			<form method="post" class="form" action="">
+				
+				   
+				   <input type="text" name="name" id="name" placeholder="Enter your name">
+				   
+				   <textarea id="massege" type="text" name="massege" placeholder="Enter Your Massege"></textarea>
+		           <input id="submit" type="submit" name="submit" class="sendbtn" placeholder="Submit">
+			   
+		    </form>
+		   
+		</div>
+		
+
+
+
+
+
+
+	</section>
+
+
+
+	<section class="comment-section">
+		<div class="allcomment-div">
+
+
+			<div class="comment-div">
+				<div class="user">
+					<i class="fa fa-user"></i>
+					<h3><b>Manoj Mahata</b></h3>
+				</div>
+				<div><p>this is a new para of Comment section and now you can comment by your choice</p></div>
+			</div>
+			<div class="comment-div">
+				<div class="user">
+					<i class="fa fa-user"></i>
+					<h3><b>Manoj Mahata</b></h3>
+				</div>
+				<div><p>this is a new para of Comment section and now you can comment by your choice</p></div>
+			</div>
+			<div class="comment-div">
+				<div class="user">
+					<i class="fa fa-user"></i>
+					<h3><b>Manoj Mahata</b></h3>
+				</div>
+				<div><p>this is a new para of Comment section and now you can comment by your choice</p></div>
+			</div>
+			<div class="comment-div">
+				<div class="user">
+					<i class="fa fa-user"></i>
+					<h3><b>Manoj Mahata</b></h3>
+				</div>
+				<div><p>this is a new para of Comment section and now you can comment by your choice</p></div>
+			</div>
+			<div class="comment-div">
+				<div class="user">
+					<i class="fa fa-user"></i>
+					<h3><b>Manoj Mahata</b></h3>
+				</div>
+				<div><p>this is a new para of Comment section and now you can comment by your choice</p></div>
+			</div>
+		</div>
+	</section>
+
+
+	<!------ for about section----->
+
+
+
+	<section class="freeeducationsection" id="About">
+		<div class="coursediv">
+		    <h2 class="h2co">About us</h2>
+	    </div>
+		<div class="aboutdiv">
+		    <div class="paraone">
+			  <p class="bigtext">FREE EDUCATION FOR EVERYONE -THIS IS A BIG LEARNING SIGHT</p>
+			  <p>	According to international human rights law, primary education shall be compulsory and free of charge. Secondary and    higher education shall be made progressively free of charge.
+
+ 			
+		    </div>
+		    <div class="img">
+		    	<img src="picture/codinglogo5.jfif">
+		    </div>
+	
+	    </div>
+	    <div class="aboutdiv">
+		    <div class="paraone">
+			    <p class="bigtext" >ABOUT US -THIS IS A BIG FREE EDUCATION SIGHT</p>
+			    <p>	We give some good free education tips for new and junior developer and computer science student 
+			     for gain some knollege in coding ,we know in this time in 2021 ther lots of education sight and online learnig platform ,those are so expensive for a middle class family student to take the course in high price, this is impossible for some student ,so our our sight for those stuident who are welcome to learn basic of coding in diffrent language ,like c, c++,java,python ,html,c#,javascript,etc.  </p>
+			     <p>Tutorials Point originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at their own pace from the comforts of their drawing rooms.
+
+                     The journey commenced with a single tutorial on HTML in 2006 and elated by the response it generated, we worked our way to adding fresh tutorials to our repository which now proudly flaunts a wealth of tutorials and allied articles on topics ranging from programming languages to web designing to academics and much more.</p>
+			
+		    </div>
+		    <div class="img">
+			    <img src="picture/codinglogo3.jfif">
+		    </div>
+		</div>
+
+	</section>
+
+
+
+	<!--- for  services section ----->
+
+
+
+	<section class="servicessection" id="service">
+		<div class="coursediv">
+		    <h2 class="h2co">Services</h2>
+	    </div>
+		<div class="aboutdiv">
+		    <div class="paraone">
+			  <p class="bigtext">OUR SERVICES - FREE SERVICES </p>
+			  <p>
+			  	We provide some  education services in youtube ,google ,facebook,linkedin on many sights .if you want to reach us on youtube ,gooogle, facebook ,linkedin link are given below  by clicking those link you can directly going our page .
+			  </p>	
+
+ 			
+		    </div>
+		    <div class="img">
+		    	<img src="picture/codinglogo4.jfif">
+		    </div>
+	
+	    </div>
+	    <div class="aboutdiv">
+		    <div class="paraone">
+			    <p class="bigtext" >VIDEO TUTORIAL SERVICE-THIS IS A BIG FREE EDUCATION SIGHT</p>
+			    <p>	We give some good free education tips for new and junior developer and computer science student 
+			     for gain some knollege in coding ,we know in this time in 2021 ther lots of education sight and online learnig platform ,those are so expensive for a middle class family student to take the course in high price, this is impossible for some student ,so our our sight for those stuident who are welcome to learn basic of coding in diffrent language ,like c, c++,java,python ,html,c#,javascript,etc.  </p>
+			
+		    </div>
+		    <div class="img">
+			    <img src="picture/codinglogo.jfif">
+		    </div>
+		</div>
+
+	</section>
+
+
+
+	
+
+
+
+
+
+
+
+	<!--- for contact section--->
+
+
+
+
+
+
+
+
+	<section class="lastsection" id="contact">
+		<div class="linelast">
+			<hr>
+		</div>
+		<div class="coursediv">
+		    <h2 class="h2co">Contact us</h2>
+	    </div>
+	    
+		<div class="allsight">
+			
+			<div class="pagelink">
+				<div class="sightlink">
+					<img src="picture/youtube.jfif">
+					<a href="" class="linktext">youtube channel link</a>
+				</div>
+				<div class="sightlink">
+					<img src="picture/facebook.jfif">
+					<a href="" class="linktext">facebook page link</a>
+				</div>
+				<div class="sightlink">
+					<img src="picture/linkedin.jfif">
+					<a href="" class="linktext">linkedin page link</a>
+				</div>
+				
+			</div>
+			<div class="personalsight">
+				<div class="sightlink">
+					<img src="picture/facebook.jfif">
+					<a href="" class="linktext">websight designer fcebook profile</a>
+				</div>
+				<div class="sightlink">
+					<img src="picture/linkedin.jfif">
+					<a href="" class="linktext">websigt Designer Linked in Profile</a>
+				</div>
+			</div>
+		    
+		
+		    <div class="address">
+			    <div class="coursediv">
+		           
+		           <div class="address2">
+		    	      <p>kolkata,west bengal, india</p>
+		    	      <a href="mailto:manojmahata.mid@gmail.com" class="linktext">Email:-manojmahata.mid@gmail.com</a>
+		    	      <a href="tel:+8637583151" class="linktext">mobile no:-8637583151</a>
+		    	
+		            </div>
+		        </div>
+	    
+	            
+		    </div>
+			<div class="imgmap">
+			    <img src="picture/kolkata.png">
+		    </div>
+
+		 </div>
+			
+		
+
+	</section>
+
+
+
+
+
+
+
+
+	<!------for copyright section--->
+
+
+	<section class="copyright">
+		<div class="linelast">
+			<hr>
+		</div>
+		<h4>© Copyright 2021. All Rights Reserved.</h4>
+		<h4>coocking policy</h4>
+		<h4>help and service</h4>
+	</section>
+	
+	
+</body>
+</html>  
