@@ -8,6 +8,38 @@
 	<script src="https://kit.fontawesome.com/a53c52c612.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<?php
+ $server="localhost";
+ $user="root";
+ $password="";
+ $db="manojblogsite";
+
+ $conn=mysqli_connect($server,$user,$password,$db);
+
+ if($conn){
+    $username=$_POST['name'];
+	$useremail=$_POST['email'];
+
+	   $query="insert into register_table(name,email)values('$username','$useremail')";
+	   $resultquery=mysqli_query($conn,$query);
+	   if(!$resultquery){
+		   ?>
+		    <script>
+			   alert("Registration is not successfull");
+		    </script>
+
+		   <?php
+	   }
+	   else{ ?>
+	        <script>
+		        alert("Registration successfull");
+		    </script>
+
+	        <?php 
+	    }
+	}
+?>
+
 	<header>
 		<nav>
 			<div class="logo" ><button class="open-btn" onclick="menuopen()"><i class="fa fa-bars"></i></button><h1>CODING ACADEMY</h1>
@@ -82,8 +114,9 @@
 					</div>
 				</div>
 			</div>
+</header>
 		
-	</header>
+	
 
 
 	
@@ -226,6 +259,31 @@
 
 	<!---------for background section--->
 
+    <?php
+	$commentname=$_POST['commentname'];
+	$commentsubject=$_POST['commentmassege'];
+
+	   $query="insert into comment_table(name,comment)values('$commentname','$commentsubject')";
+	   $resultquery=mysqli_query($conn,$query);
+	   if(!$resultquery){
+	?>
+		    <script>
+			   alert("comment not added successfull");
+		    </script>
+
+	<?php
+	   }
+	   else{
+	?>
+	        <script>
+		        alert("comment added successfull");
+		    </script>
+
+	<?php 
+	        mysqli_close($conn);  
+	    }
+
+	?>
 
 	<section class="bottombackground">
 		<h3><b>CODING ACADEMY</b></h3>
@@ -236,12 +294,12 @@
 		readers  wants and demands please follow us and stay contact
 		with us thank you for visiting our website </p>
 		<div class="commentbar">
-			<form method="post" class="form" action="">
+			<form method="post" class="form" action="jmyweb.php">
 				
 				   
-				   <input type="text" name="name" id="name" placeholder="Enter your name">
+				   <input type="text" name="commentname" id="name" placeholder="Enter your name">
 				   
-				   <textarea id="massege" type="text" name="massege" placeholder="Enter Your Massege"></textarea>
+				   <textarea id="massege" type="text" name="commentmassege" placeholder="Enter Your Massege"></textarea>
 		           <input id="submit" type="submit" name="submit" class="sendbtn" placeholder="Submit">
 			   
 		    </form>
@@ -408,26 +466,26 @@
 			<div class="pagelink">
 				<div class="sightlink">
 					<img src="https://th.bing.com/th/id/OIP.TOkyoG9WekimdckvSDxdtgHaFt?w=233&h=180&c=7&r=0&o=5&pid=1.7">
-					<a href="" class="linktext">youtube channel link</a>
+					<a href="www.youtube.com" class="linktext">youtube channel link</a>
 				</div>
 				<div class="sightlink">
 					<img src="https://th.bing.com/th/id/OIP._cZxl4BLaQaQcw6a-kkaSAHaFj?w=240&h=180&c=7&r=0&o=5&pid=1.7">
-					<a href="" class="linktext">facebook page link</a>
+					<a href="www.facebook.com" class="linktext">facebook page link</a>
 				</div>
 				<div class="sightlink">
 					<img src="https://th.bing.com/th/id/OIP.GEYQHMObEU8NKsnJ_HPxzQHaEK?w=329&h=185&c=7&r=0&o=5&pid=1.7">
-					<a href="" class="linktext">linkedin page link</a>
+					<a href="www.linkedin.com" class="linktext">linkedin page link</a>
 				</div>
 				
 			</div>
 			<div class="personalsight">
 				<div class="sightlink">
 					<img src="https://th.bing.com/th/id/OIP._cZxl4BLaQaQcw6a-kkaSAHaFj?w=240&h=180&c=7&r=0&o=5&pid=1.7">
-					<a href="" class="linktext">websight designer fcebook profile</a>
+					<a href="www.facebook.com" class="linktext">websight designer fcebook profile</a>
 				</div>
 				<div class="sightlink">
 					<img src="https://th.bing.com/th/id/OIP.GEYQHMObEU8NKsnJ_HPxzQHaEK?w=329&h=185&c=7&r=0&o=5&pid=1.7">
-					<a href="" class="linktext">websigt Designer Linked in Profile</a>
+					<a href="www.linkedin.com" class="linktext">websigt Designer Linked in Profile</a>
 				</div>
 			</div>
 		    

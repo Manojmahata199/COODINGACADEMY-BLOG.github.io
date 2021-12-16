@@ -79,8 +79,9 @@ nav .menu a {
 	border-radius: 20px;
 	margin-top: 40px;
 	z-index: 1;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	position: fixed;
+	overflow-y: hidden;
 }
 .drop-btn{
 	display: flex;

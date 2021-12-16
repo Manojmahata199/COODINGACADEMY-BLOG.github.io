@@ -7,7 +7,9 @@
 	<script src="index.js"></script>
 </head>
 <body>
-	<nav>
+
+
+    <nav>
 		<div class="logo" ><h1>CODING ACADEMY</h1>
 			
 		</div>
@@ -21,9 +23,9 @@
 	</nav>
 	<div class="main-div">
 		<div class="center-div">
-			<h3>log in form</h3>
+			<h3>Registration form</h3>
 			<div class="small-div">
-				<form action="jmyweb.html" method="post" onsubmit="return myweb()" name="form1" >
+				<form action="jmyweb.php" method="post" onsubmit="return myweb()" name="form1" >
 					<div>
 						User Name: <input type="text" placeholder="enter your name here" id="name" name="name">
 					               <p id="nameerror"></p>
